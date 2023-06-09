@@ -1,129 +1,172 @@
-.App {
-  margin-top: 25px;
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+*{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
 }
 body{
-  /* background-color: green; */
+  background-color: rgb(228, 228, 228);
 }
 
-.MobileScreen *{
-  margin: 0px;
-}
-.MobileScreen{
-  min-height: 650px;
-  /* padding-top: 50px;
-  padding-left: 20px; */
-  /* padding-right: 20px; */
-  width: 300px;
-  background-image: url(../src/back.png);
-  background-repeat: no-repeat;
-  background-size: 300px;
-}
+/*****
+head
+*****/
 .head{
-  margin-top: 50px;
-  margin-left: 20px;
-}
-.head h2{
-  font-size: 20px;
-}
-.head p{
-  font-size: 15px;
-  color: grey;
-  margin-bottom: 5px;
-}
-
-#search{
-  width: 205px;
-  height: 20px;
-  padding: 0px 25px;
-  /* mar/ */
-  border-radius: 15px;
-  border: 1px solid black;
-  background-image: url("https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png");
-  background-size: 10px;
-  background-repeat: no-repeat;
-  background-position-y: center;
-  background-position-x: 8px;
-  
-}
-
-
-.contacts{
-  width: 260px;
-  margin-left: 20px;
-  max-height: 432px;
-  /* overflow-y: scroll; */
-}
-.contact{
-  /* background-color: yellow; */
-  width: 257px;
   display: flex;
+  background-color: purple;
   align-items: center;
-  justify-content: space-between;
-
-}
-
-.left{
-  display: flex;
-  align-items: center;
-}
-.left img{
-  margin-right: 10px;
-}
-.right input{
-  height: 17px;
-  width: 17px;
-}
-
-.name{
-  font-size: 25x;
-  font-weight: 600;
-}
-.number{
-  font-size: 13px;
-}
-
-.save{
-  display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
+  font-size: 25px;
+  padding: 10px 0px;
+  margin-bottom: 35px;
 }
-.save button{
-  background-color: rgb(99, 255, 99);
-  border: none;
-  border-radius: 25px;
-  color: rgb(24, 24, 87);
-  font-size: 17px;
-  font-weight: 600;
-  padding: 10px 25px;
+.head img{
+  height: 50px;
+  margin-right: 15px ;
+}
+
+#logout{
   position: absolute;
-  top : 10px;  
+  right: 15px;
+  font-size: 15px;
+  padding: 5px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 
-.done{
-  background-color: rgb(229, 229, 229);
-  position: absolute;
+/**********
+login
+**********/
+.login{
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+}
+.login-form{
   border-radius: 15px;
-  padding: 15px;
+  padding: 10px 25px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: .5s;
+  flex-direction: column;
+  border: 2px solid purple;
+  width: fit-content;
 }
-.ok{
-  background-color: rgb(170, 255, 170);
+
+form{
+  display:flex;
+  flex-direction: column;
+}
+
+form label{
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+form input{
+  font-size: 17px;
+  padding: 2px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
   border: none;
-  border-radius: 25px;
-  color: rgb(24, 24, 87);
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px 20px;
+}
+
+form button{
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 5px;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/*******
+albums
+*******/
+.albums{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+}
+
+.album-card{
+  margin: 10px;
+  /* border-radius: 7px; */
+  overflow: hidden;
+  color: black;
+  transition: 0.25s;
+}
+.album-card:hover{
+  transform: scale(1.05);
+}
+
+.album-card img{
+  border-radius: 7px;
+}
+
+
+
+
+
+
+
+.inside-album{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* padding: 20px; */
+  justify-content: space-around;
+}
+
+.img_card{
+  margin: 10px;
+  /* border-radius: 7px; */
+  overflow: hidden;
+  color: black;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.img_card:hover{
+  transform: scale(1.05);
+}
+
+.img_card img{
+  height: 150px;
+  width: 250px;
+  border-radius: 7px;
+}
+
+.bigImg{
+  position: absolute;
+  background-color:rgb(154, 154, 154);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+.bigImg img{
+  height: 300px;
+}
+
+.bigImg p{
+  font-size: 20px;
+  margin: 15px;
+}
+
+.bigImg button{
+  margin-bottom: 10px;
+  font-size: 17px;
+  padding: 5px 25px;
+  border: purple 2px splid;
+  border-radius: 7px;
   cursor: pointer;
 }

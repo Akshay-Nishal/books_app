@@ -3,18 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { UserProvider } from './contexts/user';
-import { ImageProvider } from './contexts/images';
-// UserProvide
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <UserProvider>
-      <ImageProvider>
-        <App/>
-      </ImageProvider>
-    </UserProvider>
+    <App />
   </React.StrictMode>
 );
 

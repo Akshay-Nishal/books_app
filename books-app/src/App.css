@@ -1,0 +1,129 @@
+.App {
+  margin-top: 25px;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  /* background-color: green; */
+}
+
+.MobileScreen *{
+  margin: 0px;
+}
+.MobileScreen{
+  min-height: 650px;
+  /* padding-top: 50px;
+  padding-left: 20px; */
+  /* padding-right: 20px; */
+  width: 300px;
+  background-image: url(../src/back.png);
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+.head{
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.head h2{
+  font-size: 20px;
+}
+.head p{
+  font-size: 15px;
+  color: grey;
+  margin-bottom: 5px;
+}
+
+#search{
+  width: 205px;
+  height: 20px;
+  padding: 0px 25px;
+  /* mar/ */
+  border-radius: 15px;
+  border: 1px solid black;
+  background-image: url("https://img.uxwing.com/wp-content/themes/uxwing/download/user-interface/search-icon.png");
+  background-size: 10px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 8px;
+  
+}
+
+
+.contacts{
+  width: 260px;
+  margin-left: 20px;
+  max-height: 432px;
+  /* overflow-y: scroll; */
+}
+.contact{
+  /* background-color: yellow; */
+  width: 257px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.left{
+  display: flex;
+  align-items: center;
+}
+.left img{
+  margin-right: 10px;
+}
+.right input{
+  height: 17px;
+  width: 17px;
+}
+
+.name{
+  font-size: 25x;
+  font-weight: 600;
+}
+.number{
+  font-size: 13px;
+}
+
+.save{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.save button{
+  background-color: rgb(99, 255, 99);
+  border: none;
+  border-radius: 25px;
+  color: rgb(24, 24, 87);
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 25px;
+  position: absolute;
+  top : 10px;  
+  cursor: pointer;
+}
+
+
+.done{
+  background-color: rgb(229, 229, 229);
+  position: absolute;
+  flex-direction: column;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+.ok{
+  background-color: rgb(170, 255, 170);
+  border: none;
+  border-radius: 25px;
+  color: rgb(24, 24, 87);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 20px;
+  cursor: pointer;
+}
